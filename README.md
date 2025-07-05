@@ -10,13 +10,42 @@ Manual cashier operations often involve repetitive tasks such as tracking items,
 
 ---
 
-## Flowchart
+## Program Descriptions
 
-![Flowchart of Cashier App](assets/flowchart.png)
+### `main.py`
+
+Handles the main program flow. It shows a menu where users can:
+
+- Add, update, or delete items  
+- View the cart summary  
+- Calculate total price with discount  
+- Reset the cart  
+- Exit the app  
+
+All user interactions happen here using a simple CLI (Command Line Interface).
 
 ---
 
-## 🚀 Features
+### `transaction.py`
+
+Contains the `Transaction` class which handles all the core logic:
+
+- Add or update item data  
+- Delete or reset items  
+- Show items in table format (using `tabulate`)  
+- Calculate total and apply discount rules  
+
+This file focuses on processing transactions cleanly using object-oriented programming (OOP).
+
+
+---
+## Flowchart
+
+![Flowchart of Cashier App](asset/flowchart.png)
+
+---
+
+## Features
 
 ### 1. Add items with name, quantity, and unit price
 ![Add item screenshot](result/add_item.png)
@@ -38,3 +67,11 @@ Manual cashier operations often involve repetitive tasks such as tracking items,
 
 ### 7. Interactive menu system with input handling
 ![Menu screenshot](result/menu.png)
+
+---
+
+##  Conclusion
+This project successfully implements a basic console-based cashier system using object-oriented Python. It automates item input, editing, and transaction calculations with a clean tabulated display. The code structure follows OOP best practices, making it easy to maintain and expand in the future.
+
+With this project, users can simulate a real transaction flow, perform basic CRUD operations, and apply tiered discount logic in a user-friendly CLI interface.
+
